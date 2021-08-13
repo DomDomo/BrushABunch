@@ -18,6 +18,9 @@ export class Chat {
 
     let message = this.input.value;
 
+    // Fixes HTML injection vulnerability
+    message = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
     if (message) this.socket.emit("send-chat-message", message);
     this.input.value = "";
   }
