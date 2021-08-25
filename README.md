@@ -6,6 +6,7 @@ The "app" uses socket.io library to allow users to communicate via a server whic
 
 ## Play
 Open two browser tabs on localhost:3000 or go to https://brushabunch.herokuapp.com/ and join the lobby. Once 2 players are connected the round will begin.
+If you are from the US, use this site instead: https://bushabunchus.herokuapp.com/.
 
 ## Drawing Canvas
 The drawing is done on an HTML5 canvas. Mouse events for drawing and other events such as color and thickness change are communicated to other users on that same server.
