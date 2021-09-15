@@ -35,11 +35,11 @@ body ::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #menuField {
@@ -58,11 +58,11 @@ body ::-webkit-scrollbar-thumb {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 0;
 }
 
@@ -85,6 +85,10 @@ body ::-webkit-scrollbar-thumb {
   text-align: center;
   width: inherit;
   display: inline-block;
+}
+
+#choiceBoxHeader {
+  height: 3rem;
 }
 
 #containerUser {
@@ -110,14 +114,14 @@ body ::-webkit-scrollbar-thumb {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 4vw;
   margin-top: 8px;
@@ -132,8 +136,8 @@ body ::-webkit-scrollbar-thumb {
 #toolbarDiv .containerBrushSizes .brushSize {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 48px;
   height: 48px;
   border-radius: 2px;
@@ -192,18 +196,18 @@ body ::-webkit-scrollbar-thumb {
 #toolbarDiv .containerColorColumn {
   height: auto;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 #toolbarDiv .containerColorColumn .colorItem {
@@ -211,8 +215,8 @@ body ::-webkit-scrollbar-thumb {
   height: 30px;
   cursor: pointer;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 #toolbarDiv .containerColorColumn .colorItem:active {
@@ -227,14 +231,14 @@ body ::-webkit-scrollbar-thumb {
   height: 55vh;
   padding: 4px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   border-radius: 2px;
 }
 
 #boxChat {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 100%;
 }
 

@@ -1,145 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rCA2D+D9QXuP2TomtQwd+uP50EHjpafN+wruul0sXZzX/Da7Txn4tB9aLMZV4DZm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rCA2D+D9QXuP2TomtQwd+uP50EHjpafN+wruul0sXZzX/Da7Txn4tB9aLMZV4DZm" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+    <title>BrushABunch</title>
+  </head>
 
-  <title>BrushABunch</title>
-</head>
-
-<body>
-
-  <!-- Shown by default main menu/username select screen -->
-  <div id="menuContainer">
-    <div class="containter">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 class="titleName">BrushABunch</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="jumbotron" id="menuField">
-          <h1 id="smallName">Choose a username to begin playing!</h1>
-          <div class="form-group">
-            <input type="text" id="usernameInput" class="form-control" placeholder="Enter username" maxlength="20"
-              required>
-          </div>
-          <hr class="my-3">
-          <p id="centeredFooter">
-            <a class="btn btn-outline-success btn-lg" id="playBtn" href="" role="button">Play</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Hidden until username is entered -->
-  <div id="gameContainer" style="display: none;">
-    <main class="container">
-      <header class="py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
+  <body>
+    <!-- Shown by default main menu/username select screen -->
+    <div id="menuContainer">
+      <div class="containter">
+        <div class="row">
           <div class="col-12 text-center">
             <h1 class="titleName">BrushABunch</h1>
           </div>
-
         </div>
-      </header>
-      <div class="row">
-        <div id="wordChoiceBox" class="btn-group btn-group-lg mt-4" role="group">
-          <h3 id="choiceBoxHeader"></h3>
-          <div id="choiceButtonsDiv" style="display: none;">
-            <h3>Choose a word!</h3>
-            <button type="button" class="btn btn-danger">Block level button</button>
-            <button type="button" class="btn btn-warning">Block level button</button>
-            <button type="button" class="btn btn btn-info">Block level button</button>
+        <div class="row">
+          <div class="jumbotron" id="menuField">
+            <h1 id="smallName">Choose a username to begin playing!</h1>
+            <div class="form-group">
+              <input
+                type="text"
+                id="usernameInput"
+                class="form-control"
+                placeholder="Enter username"
+                maxlength="20"
+                required
+              />
+            </div>
+            <hr class="my-3" />
+            <p id="centeredFooter">
+              <a
+                class="btn btn-outline-success btn-lg"
+                id="playBtn"
+                href=""
+                role="button"
+                >Play</a
+              >
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <!-- Active user list -->
-
-        <aside class="col-md-2">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">User list</h3>
-          <div id="containerUser">
-
+    <!-- Hidden until username is entered -->
+    <div id="gameContainer" style="display: none">
+      <main class="container">
+        <header class="py-3">
+          <div
+            class="row flex-nowrap justify-content-between align-items-center"
+          >
+            <div class="col-12 text-center">
+              <h1 class="titleName">BrushABunch</h1>
+            </div>
           </div>
-        </aside>
-
-        <div class="col-md-7">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">Canvas</h3>
-          <div id="canvasDiv">
-
-          </div>
-          <div class="mt-4" id="toolbarDiv">
-            <div class="containerBrushSizes">
-              <div class="brushSize" data-size="0">
-                <div class="sizeCenter">
-                  <div class="size size6"></div>
-                </div>
-              </div>
-              <div class="brushSize" data-size="0.15">
-                <div class="sizeCenter">
-                  <div class="size size16"></div>
-                </div>
-              </div>
-              <div class="brushSize" data-size="0.45">
-                <div class="sizeCenter">
-                  <div class="size size30"></div>
-                </div>
-              </div>
-              <div class="brushSize" data-size="1">
-                <div class="sizeCenter">
-                  <div class="size size44"></div>
-                </div>
-              </div>
+        </header>
+        <div class="row">
+          <div
+            id="wordChoiceBox"
+            class="btn-group btn-group-lg mt-4"
+            role="group"
+          >
+            <h3 id="choiceBoxHeader"></h3>
+            <div id="choiceButtonsDiv" style="display: none">
+              <h3>Choose a word!</h3>
+              <button type="button" class="btn btn-danger">
+                Block level button
+              </button>
+              <button type="button" class="btn btn-warning">
+                Block level button
+              </button>
+              <button type="button" class="btn btn btn-info">
+                Block level button
+              </button>
             </div>
           </div>
         </div>
 
-        <aside class="col-md-3">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">Chat</h3>
-          <!-- Chat Box-->
-          <div id="containerChat">
-            <div id="boxChat">
-              <div id="boxMessages">
-              </div>
-              <div id="boxChatInput">
-                <form id="formChat">
-                  <input class="form-control" id="inputChat" autocomplete="off" type="text"
-                    placeholder="Type your guess here..." maxlength="100" />
-                </form>
+        <div class="row">
+          <!-- Active user list -->
+
+          <aside class="col-md-2">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">Players</h3>
+            <div id="containerUser"></div>
+          </aside>
+
+          <div class="col-md-7">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">Canvas</h3>
+            <div id="canvasDiv"></div>
+            <div class="mt-4" id="toolbarDiv">
+              <div class="containerBrushSizes">
+                <div class="brushSize" data-size="0">
+                  <div class="sizeCenter">
+                    <div class="size size6"></div>
+                  </div>
+                </div>
+                <div class="brushSize" data-size="0.15">
+                  <div class="sizeCenter">
+                    <div class="size size16"></div>
+                  </div>
+                </div>
+                <div class="brushSize" data-size="0.45">
+                  <div class="sizeCenter">
+                    <div class="size size30"></div>
+                  </div>
+                </div>
+                <div class="brushSize" data-size="1">
+                  <div class="sizeCenter">
+                    <div class="size size44"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </aside>
 
-
-      </div>
-      <!-- /.row -->
-    </main>
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="/socket.io/socket.io.js"></script>
-  <script type="module" src="js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</body>
-
+          <aside class="col-md-3">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">Chat</h3>
+            <!-- Chat Box-->
+            <div id="containerChat">
+              <div id="boxChat">
+                <div id="boxMessages"></div>
+                <div id="boxChatInput">
+                  <form id="formChat">
+                    <input
+                      class="form-control"
+                      id="inputChat"
+                      autocomplete="off"
+                      type="text"
+                      placeholder="Type your guess here..."
+                      maxlength="100"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- /.row -->
+      </main>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
