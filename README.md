@@ -1,5 +1,8 @@
 # BrushABunch
-An online website where users are randomly chosen to draw while others guess the chosen word. You can see a demo of how it works [here](https://brushabunch.onrender.com/).
+An online website where users are randomly chosen to draw while others guess the chosen word. 
+
+## Demo
+You can see a demo of how it works [here](https://brushabunch.onrender.com/).
 
 ## Client-Server
 The "app" uses socket.io library to allow users to communicate via a server which only broadcasts their messages to each other. Just run `npm install && npm start` and you are good to go on localhost:3000.
